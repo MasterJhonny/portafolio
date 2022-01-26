@@ -17,8 +17,8 @@
             <ul>
                 <li><a href="#image" class="menu__item">About me</a></li>
                 <li><a href="#main-skill" class="menu__item">Skills</a></li>
-                <li><a href="#" class="menu__item">Projects</a></li>
-                <li><a href="#" class="menu__item">Contact</a></li>
+                <li><a href="#proyects" class="menu__item">Projects</a></li>
+                <li><a href="#contact" class="menu__item">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -31,7 +31,6 @@
                     <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt.</p>
                 </div>
                 <div class="home__image" id="image">
-                    <!-- <img src="https://i.postimg.cc/HWMvMW0L/image.png" alt="image developer"> -->
                     <img src="https://i.postimg.cc/6qJ5j610/pp.jpg" alt="image developer">
                 </div>
             </div>
@@ -43,7 +42,7 @@
             </div>
         </section>
         <section class="main__skill" id="main-skill">
-            <h3>Skills</h3>
+            <h3 class="section__title">Skills</h3>
             <div class="skill__container">
                 <div class="skill__container--item">
                     <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="logo de la tecnologia"/>
@@ -83,6 +82,97 @@
                 </div>
             </div>
         </section>
+        <section class="main__proyects" id="proyects">
+            <h3 class="section__title">Projects</h3>
+            <div class="projects__container">
+                <div class="card">
+                    <img class="card__img" src="https://i.postimg.cc/TPZdTWB3/fondo-pro1.png" alt="image project">
+                    <div class="card__container">
+                        <h3 class="card__title">PLATZI VIDEO</h3>
+                        <div class="access">
+                            <a href="https://github.com/MasterJhonny/frondtendDeveloper/tree/master/proyect" target="_blank">code</a>
+                            <a href="https://masterjhonny.github.io/frondtendDeveloper/proyect/index.html" target="_blank">view project</a>
+                        </div>
+                        <p>Es el frontend de una plataforma de streaming, para el projecto se utilizo html y css.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__img" src="https://i.postimg.cc/HsgXzrZ5/img-font-chat.png" alt="image project">
+                    <div class="card__container">
+                        <h3 class="card__title">SUPER CHAT</h3>
+                        <div class="access">
+                            <a href="https://github.com/MasterJhonny/chat--frontend" target="_blank">code</a>
+                            <a href="https://masterjhonny.github.io/chat--frontend/" target="_blank">view project</a>
+                        </div>
+                        <p>Es un app web de mensajeria en linea, se utilizo html, css, javascript, node js mongodb y express.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__img" src="https://i.postimg.cc/qRVPbfN1/gif-mobile-first.gif" alt="image project">
+                    <div class="card__container">
+                        <h3 class="card__title">MOBILE FIRST</h3>
+                        <div class="access">
+                            <a href="https://github.com/MasterJhonny/MobileFirst" target="_blank">code</a>
+                            <a href="https://masterjhonny.github.io/MobileFirst/" target="_blank">view project</a>
+                        </div>
+                        <p>Es un projecto de maquetacion aplicando la estrategia de MobileFirst, se utilizo html y css.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__img" src="https://cdn-bjcjl.nitrocdn.com/HQYXfZvlijlYvwqzOZEqIWtqVqwJebrr/assets/static/optimized/rev-f7fc947/wp-content/uploads/2019/07/planificacion_proyecto_web_yeeply-1.jpg" alt="image project">
+                    <div class="card__container">
+                        <h3 class="card__title">TITLE PROJECT</h3>
+                        <div class="access">
+                            <a href="#">code</a>
+                            <a href="#">view project</a>
+                        </div>
+                        <p>Velit officia consequat mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__img" src="https://cdn-bjcjl.nitrocdn.com/HQYXfZvlijlYvwqzOZEqIWtqVqwJebrr/assets/static/optimized/rev-f7fc947/wp-content/uploads/2019/07/planificacion_proyecto_web_yeeply-1.jpg" alt="image project">
+                    <div class="card__container">
+                        <h3 class="card__title">TITLE PROJECT</h3>
+                        <div class="access">
+                            <a href="#">code</a>
+                            <a href="#">view project</a>
+                        </div>
+                        <p>Velit officia consequat mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <serction class="main__contact" id="contact">
+            <h3 class="section__title">Contact</h3>
+            <div class="contact__container">
+                <form action="">
+                    <label>
+                        <span>Name</span>
+                        <input class="contact__container--input" type="text" name="name" placeholder="Example: Juan..." autocomplete="name">
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input class="contact__container--input" type="text" name="email" placeholder="Example: user@example.com" autocomplete="email">
+                    </label>
+                    <label>
+                        <span>Message</span>
+                        <textarea class="contact__container--input textarea" name="message" placeholder="Hi, i will..." autocomplete="off" rows="10" cols="50"></textarea>
+                    </label>
+                    <div class="sumbit__btn">
+                        <button class="btn">sumbit</button>
+                    </div>
+                </form>
+            </div>
+        </serction>
     </main>
+    <footer class="footer">
+        <ul>
+            <li><a href="#">red social</a></li>
+            <li><a href="#">red social</a></li>
+            <li><a href="#">red social</a></li>
+            <li><a href="#">red social</a></li>
+        </ul>
+        <p>© copyright 2022</p>
+    </footer>
 </body>
 </html>
