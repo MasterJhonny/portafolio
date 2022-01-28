@@ -14,8 +14,13 @@
     <header class="header">
         <div class="logo">Home</div>
         <div class="menu">
-            <ul>
-                <li><a href="#image" class="menu__item">About me</a></li>
+            <label class="menu__btn">
+                <input id="btn" type="checkbox"/>
+                <span class="menu__btn--fondo"></span>
+                <span class="menu__btn--text">X</span>
+            </label>
+            <ul id="menu-container">
+                <li><a href="#main-abaout" class="menu__item">About me</a></li>
                 <li><a href="#main-skill" class="menu__item">Skills</a></li>
                 <li><a href="#proyects" class="menu__item">Projects</a></li>
                 <li><a href="#contact" class="menu__item">Contact</a></li>
@@ -174,5 +179,17 @@
         </ul>
         <p>© copyright 2022</p>
     </footer>
+    <script>
+        const menuContainer = document.querySelector('#menu-container');
+        const btn = document.querySelector('#btn');
+
+        btn.onclick = () => {
+            if(menuContainer.style.display === 'flex') {
+                menuContainer.style.display = 'none';
+            } else {
+                menuContainer.style.display = 'flex';
+            }
+        }
+    </script>
 </body>
 </html>
