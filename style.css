@@ -414,6 +414,9 @@ a {
 .view {
     display: block;
 }
+.none {
+    visibility: hidden;
+}
 
 /* styles responsive */
 @media (max-width: 1000px) {
