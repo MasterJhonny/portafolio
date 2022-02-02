@@ -401,10 +401,13 @@ a {
     display: flex;
     align-items: center;
     list-style: none;
-    justify-content: space-between;
+    justify-content: center;
 }
 .footer ul a {
-    color: #fff;
+    margin: 0 1rem;
+}
+.footer ul a img {
+    width: 30px;
 }
 .footer p {
     font-size: 1.4rem;
