@@ -39,10 +39,28 @@ a {
     box-shadow: 0px 4px 4px 0px #00000040;
 }
 
-.menu ul {
+.logo {
+    flex: 1;
+}
+
+.menu {
+    flex: 3;
     display: flex;
+    justify-content: flex-end;
+}
+
+.menu__btn {
+    width: 100%;
+    position: relative;
+}
+
+.menu__list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
     list-style: none;
 }
+
 .menu__item {
     color: var(--color-text);
     margin-right: 3.4rem;
@@ -61,47 +79,39 @@ a {
       opacity: 0;
     }
     to {
-      opacity: .8;
+        opacity: .8;
     }
-}
-.menu__btn {
-    display: none;
-    width: 3rem;
-    height: 3rem;
-    border: 0;
-    background-color: transparent;
-    position: relative;
 }
 .menu__btn input {
     display: none;
 }
-.menu__btn--text {
+
+.menu__btn-icon {
     display: none;
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-.menu__btn--fondo {
-    width: 100%;
-    height: 100%;
+    width: 3rem;   
+    height: 3rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    filter: invert(100%);
     position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(https://cdn-icons.flaticon.com/png/512/3876/premium/3876058.png?token=exp=1643317758~hmac=4f95edd8432802fceee4db1e0e17e73a);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    top: calc(100% - 1.5rem);
+    right: 0;
 }
 
-.menu__btn input:checked ~ .menu__btn--text {
-    display: block;
-}
-.menu__btn input:checked ~ .menu__btn--fondo {
-    display: none;
+.menu__btn-icon:hover {
+    animation-name: upHover;
+    animation-duration: 0.7s;
+    transform: scale(1.1);
 }
 
-.menu__btn input:checked .menu ul {
-    display: block;
+@keyframes upHover {
+    from {
+      transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
 }
 
 
@@ -258,6 +268,23 @@ a {
     border-radius: .6rem;
     position: relative;
 }
+
+
+.projects__container:hover > .card:hover {
+    animation-name: scale-up;
+    animation-duration: 0.7s;
+    transform: scale(1.1);
+}
+
+@keyframes scale-up {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
 .card__container {
     width: 100%;
     height: 100%;
@@ -279,6 +306,7 @@ a {
     object-fit: cover;
     border-radius: .6rem;
 }
+
 .card__title {
     font-size: 2rem;
     font-weight: 600;
@@ -404,7 +432,14 @@ a {
     justify-content: center;
 }
 .footer ul a {
+    width: 30px;
+    height: 30px;
+    display: block; 
     margin: 0 1rem;
+    border-radius: 15px;
+}
+.footer ul a:hover {
+    box-shadow: 0px 0px 4px 0px rgba(255,255,255,0.75);
 }
 .footer ul a img {
     width: 30px;
@@ -448,23 +483,40 @@ a {
     .menu {
         margin-right: 2rem;
     }
+
     .menu__btn {
         display: block;
     }
+
+    .btn--fondo {
+        display: block;
+    }
+
     .menu__item {
         margin-right: 0;
     }
-    .menu ul {
+    .menu__list {
         display: none;
         background-color: var(--colorfondo);
-        width: 100vw;
+        width: 100%;
         height: 50vh;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         position: absolute;
-        top: 6rem;
-        left: 0;
+        top: 3rem;
+        left: 2rem;
+    }
+
+    .menu__btn input:checked ~ .btn--text {
+        display: block;
+    }
+    .menu__btn input:checked ~ .btn--fondo {
+        display: none;
+    }
+
+    .menu__btn input:checked ~ .menu__list {
+        display: flex;
     }
     
     .home {
