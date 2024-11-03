@@ -1,236 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Montserrat:wght@400;500;600&family=Nunito:wght@200;300;400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Montserrat:wght@400;500;600&family=Nunito:wght@200;300;400&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <!-- Meta Pixel Code -->
     <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '319869640019675');
-        fbq('track', 'PageView');
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "319869640019675");
+      fbq("track", "PageView");
     </script>
-    <noscript><img height="1" width="1" style="display:none"
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
         src="https://www.facebook.com/tr?id=319869640019675&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="logo">Home</div>
-        <div class="menu">
-            <label class="menu__btn">
-                <input id="btn" type="checkbox"/>
-                <span class="menu__btn-icon btn--fondo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg></span>
-                <span class="menu__btn-icon btn--text"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg></span>
-                <ul class="menu__list">
-                    <li><a href="#main-abaout" class="menu__item">About me</a></li>
-                    <li><a href="#main-skill" class="menu__item">Skills</a></li>
-                    <li><a href="#proyects" class="menu__item">Projects</a></li>
-                    <li><a href="#contact" class="menu__item">Contact</a></li>
-                    <li><a href="https://drive.google.com/file/d/1qODA32qi_46QDDKNdJSYfE16lFXLkiVt/view?usp=sharing" target="_blank" class="menu__item">CV</a></li>
-                </ul>
-            </label>
-        </div>
+      <div class="logo">Home</div>
+      <div class="menu">
+        <label class="menu__btn">
+          <input id="btn" type="checkbox" />
+          <span class="menu__btn-icon btn--fondo"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
+              /></svg
+          ></span>
+          <span class="menu__btn-icon btn--text"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path
+                d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+              /></svg
+          ></span>
+          <ul class="menu__list">
+            <li><a href="#main-abaout" class="menu__item">About me</a></li>
+            <li><a href="#main-skill" class="menu__item">Skills</a></li>
+            <li><a href="#proyects" class="menu__item">Projects</a></li>
+            <li><a href="#contact" class="menu__item">Contact</a></li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1qODA32qi_46QDDKNdJSYfE16lFXLkiVt/view?usp=sharing"
+                target="_blank"
+                class="menu__item"
+                >CV</a
+              >
+            </li>
+          </ul>
+        </label>
+      </div>
     </header>
     <main class="main">
-        <section class="main__home">
-            <div class="home">
-                <div class="home__text" id="home">
-                    <h3>WEB DEVELOPER</h3>
-                    <h2>Jhonny Callisaya</h2>
-                    <p>Web developer, oriented towards
-                        the results, with motivation
-                        to continue perfecting
-                        skills and grow
-                        professionally and give a contribution
-                        significant in what I do.</p>
-                </div>
-                <div class="home__image" id="image">
-                    <img src="https://i.postimg.cc/N05XbJxY/user-picture-my.jpg" alt="image developer">
-                </div>
+      <section class="main__home">
+        <div class="home">
+          <div class="home__text" id="home">
+            <h3 id="dev">Full stack developer</h3>
+            <h2 id="name">Jhonny Callisaya</h2>
+            <p>
+              Web developer, oriented towards the results, with motivation to
+              continue perfecting skills and grow professionally and give a
+              contribution significant in what I do.
+            </p>
+          </div>
+          <div class="home__image" id="image">
+            <img
+              src="https://i.postimg.cc/N05XbJxY/user-picture-my.jpg"
+              alt="image developer"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="main__abaout" id="main-abaout">
+        <div class="abaout__container">
+          <h3>About me</h3>
+          <p>
+            I like learning and facing challenges, I like working in a team, in
+            addition to web development, I consider myself a patient and
+            cheerful person who seeks to improve both as a person and
+            professionally.
+          </p>
+        </div>
+      </section>
+      <section class="main__skill" id="main-skill">
+        <h3 class="section__title">Skills</h3>
+        <div class="skill__container">
+          <div class="skill__container--item">
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/html-1.svg"
+              alt="logo de la tecnologia"
+            />
+            <p>html</p>
+          </div>
+          <div class="skill__container--item">
+            <img
+              src="https://i.postimg.cc/wBWVnVZW/css-3-1.png"
+              alt="logo de la tecnologia"
+            />
+            <p>css</p>
+          </div>
+          <div class="skill__container--item">
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"
+              alt="logo de la tecnologia"
+            />
+            <p>javascript</p>
+          </div>
+          <div class="skill__container--item">
+            <img
+              src="https://www.svgrepo.com/show/374016/python.svg"
+              alt="logo de la tecnologia"
+            />
+            <p>python</p>
+          </div>
+          <div class="skill__container--item">
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/react-2.svg"
+              alt="logo de la tecnologia"
+            />
+            <p>react</p>
+          </div>
+          <div class="skill__container--item">
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
+              alt="logo de la tecnologia"
+            />
+            <p>node js</p>
+          </div>
+          <div class="skill__container--item">
+            <img
+              src="https://i.postimg.cc/25TvVSx3/Vector.png"
+              alt="logo de la tecnologia"
+            />
+            <p>express</p>
+          </div>
+          <div class="skill__container--item">
+            <img
+              src="https://i.postimg.cc/k4WHDRsX/flask-svgrepo-com.png"
+              alt="logo de la tecnologia"
+            />
+            <p>flask</p>
+          </div>
+          <div class="skill__container--item">
+            <img
+              src="https://www.svgrepo.com/show/373848/mysql.svg"
+              alt="logo de la tecnologia"
+            />
+            <p>my sql</p>
+          </div>
+          <div class="skill__container--item">
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/postgresql.svg"
+              alt="logo de la tecnologia"
+            />
+            <p>Postgre SQL</p>
+          </div>
+          <div class="skill__container--item">
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/git-icon.svg"
+              alt="logo de la tecnologia"
+            />
+            <p>git</p>
+          </div>
+        </div>
+      </section>
+      <section class="main__proyects" id="proyects">
+        <h3 class="section__title">Projects</h3>
+        <div class="projects__container">
+          <div class="card">
+            <img
+              class="card__img"
+              src="https://i.postimg.cc/TPZdTWB3/fondo-pro1.png"
+              alt="image project"
+            />
+            <div class="card__container">
+              <h3 class="card__title">PLATZI VIDEO</h3>
+              <div class="access">
+                <a
+                  href="https://github.com/MasterJhonny/frondtendDeveloper/tree/master/proyect"
+                  target="_blank"
+                  >code</a
+                >
+                <a
+                  href="https://masterjhonny.github.io/frondtendDeveloper/proyect/index.html"
+                  target="_blank"
+                  >view project</a
+                >
+              </div>
+              <p>
+                Es el frontend de una plataforma de streaming, para el projecto
+                se utilizo html y css.
+              </p>
             </div>
-        </section>
-        <section class="main__abaout" id="main-abaout">
-            <div class="abaout__container">
-                <h3>About me</h3>
-                <p>I like learning and facing challenges, I like working in a team, in addition to web development, I consider myself a patient and cheerful person who seeks to improve both as a person and professionally.</p>
+          </div>
+          <div class="card">
+            <img
+              class="card__img"
+              src="https://i.postimg.cc/hv802JcV/view-proyect-nutri-art.jpg"
+              alt="image project"
+            />
+            <div class="card__container">
+              <h3 class="card__title">SISTEMA DE INVENTARIOS</h3>
+              <div class="access">
+                <a
+                  href="https://github.com/MasterJhonny/front-nutri-art"
+                  target="_blank"
+                  >code</a
+                >
+                <a
+                  href="https://bit.ly/nutri-art-system-inventory"
+                  target="_blank"
+                  >view project</a
+                >
+              </div>
+              <p>
+                Aplicación web de un sistema de inventario, usando reactjs, node
+                y mongodb.
+              </p>
             </div>
-        </section>
-        <section class="main__skill" id="main-skill">
-            <h3 class="section__title">Skills</h3>
-            <div class="skill__container">
-                <div class="skill__container--item">
-                    <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="logo de la tecnologia"/>
-                    <p>html</p>
-                </div>
-                <div class="skill__container--item">
-                    <img src="https://i.postimg.cc/wBWVnVZW/css-3-1.png" alt="logo de la tecnologia"/>
-                    <p>css</p>
-                </div>
-                <div class="skill__container--item">
-                    <img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="logo de la tecnologia"/>
-                    <p>javascript</p>
-                </div>
-                <div class="skill__container--item">
-                    <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="logo de la tecnologia"/>
-                    <p>react</p>
-                </div>
-                <div class="skill__container--item">
-                    <img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="logo de la tecnologia"/>
-                    <p>node js</p>
-                </div>
-                <div class="skill__container--item">
-                    <img src="https://i.postimg.cc/25TvVSx3/Vector.png" alt="logo de la tecnologia"/>
-                    <p>express</p>
-                </div>
-                <div class="skill__container--item">
-                    <img src="https://cdn.worldvectorlogo.com/logos/mysql-6.svg" alt="logo de la tecnologia"/>
-                    <p>my sql</p>
-                </div>
-                <div class="skill__container--item">
-                    <img src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" alt="logo de la tecnologia"/>
-                    <p>Postgre SQL</p>
-                </div>
-                <div class="skill__container--item">
-                    <img src="https://cdn.worldvectorlogo.com/logos/git-icon.svg" alt="logo de la tecnologia"/>
-                    <p>git</p>
-                </div>
+          </div>
+          <div class="card">
+            <img
+              class="card__img"
+              src="https://i.postimg.cc/K80hwwrW/chat-app-1.png"
+              alt="image project"
+            />
+            <div class="card__container">
+              <h3 class="card__title">APP CHAT</h3>
+              <div class="access">
+                <a
+                  href="https://github.com/MasterJhonny/chat-socket.io"
+                  target="_blank"
+                  >code</a
+                >
+                <a href="https://chat-app-3mir.onrender.com/" target="_blank"
+                  >view project</a
+                >
+              </div>
+              <p>
+                Es un app web de mensajeria en linea, se utilizo html, css,
+                javascript, node js, express y socket.io.
+              </p>
             </div>
-        </section>
-        <section class="main__proyects" id="proyects">
-            <h3 class="section__title">Projects</h3>
-            <div class="projects__container">
-                <div class="card">
-                    <img class="card__img" src="https://i.postimg.cc/TPZdTWB3/fondo-pro1.png" alt="image project">
-                    <div class="card__container">
-                        <h3 class="card__title">PLATZI VIDEO</h3>
-                        <div class="access">
-                            <a href="https://github.com/MasterJhonny/frondtendDeveloper/tree/master/proyect" target="_blank">code</a>
-                            <a href="https://masterjhonny.github.io/frondtendDeveloper/proyect/index.html" target="_blank">view project</a>
-                        </div>
-                        <p>Es el frontend de una plataforma de streaming, para el projecto se utilizo html y css.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card__img" src="https://i.postimg.cc/hv802JcV/view-proyect-nutri-art.jpg" alt="image project">
-                    <div class="card__container">
-                        <h3 class="card__title">SISTEMA DE INVENTARIOS</h3>
-                        <div class="access">
-                            <a href="https://github.com/MasterJhonny/front-nutri-art" target="_blank">code</a>
-                            <a href="https://bit.ly/nutri-art-system-inventory" target="_blank">view project</a>
-                        </div>
-                        <p>Aplicación web de un sistema de inventario, usando reactjs, node y mongodb.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card__img" src="https://i.postimg.cc/K80hwwrW/chat-app-1.png" alt="image project">
-                    <div class="card__container">
-                        <h3 class="card__title">APP CHAT</h3>
-                        <div class="access">
-                            <a href="https://github.com/MasterJhonny/chat-socket.io" target="_blank">code</a>
-                            <a href="https://chat-socket-io-gamma.vercel.app/" target="_blank">view project</a>
-                        </div>
-                        <p>Es un app web de mensajeria en linea, se utilizo html, css, javascript, node js, express y socket.io.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card__img" src="https://i.postimg.cc/qRVPbfN1/gif-mobile-first.gif" alt="image project">
-                    <div class="card__container">
-                        <h3 class="card__title">MOBILE FIRST</h3>
-                        <div class="access">
-                            <a href="https://github.com/MasterJhonny/MobileFirst" target="_blank">code</a>
-                            <a href="https://masterjhonny.github.io/MobileFirst/" target="_blank">view project</a>
-                        </div>
-                        <p>Es un projecto de maquetacion aplicando la estrategia de MobileFirst, se utilizo html y css.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card__img" src="https://i.postimg.cc/8PYtnrP0/V-deo-sin-t-tulo-Hecho-con-Clipchamp-1.gif" alt="image project">
-                    <div class="card__container">
-                        <h3 class="card__title">RESPONSIVE DESIGN</h3>
-                        <div class="access">
-                            <a href="https://github.com/MasterJhonny/reto1" target="_blank">code</a>
-                            <a href="https://masterjhonny.github.io/reto1/" target="_blank">view project</a>
-                        </div>
-                        <p>Es una pagina web responsive, se utilizo html y css.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card__img" src="https://i.postimg.cc/cH4NNzw4/apirest.png" alt="image project">
-                    <div class="card__container">
-                        <h3 class="card__title">API REST</h3>
-                        <div class="access">
-                            <a href="https://github.com/MasterJhonny/cursoExpress" target="_blank">code</a>
-                            <a href="https://api-rest-dev-express.herokuapp.com/" target="_blank">view project</a>
-                        </div>
-                        <p>Es una api rest, se uso nodejs express.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card__img" src="https://i.postimg.cc/WbbMr1n9/notes.png" alt="image project">
-                    <div class="card__container">
-                        <h3 class="card__title">APP WEB</h3>
-                        <div class="access">
-                            <a href="https://github.com/MasterJhonny/app-notes-react" target="_blank">code</a>
-                            <a href="https://app-notes-react.vercel.app/" target="_blank">view project</a>
-                        </div>
-                        <p>Aplicación wed para notas, hecha con react con persintecia de datos y CRUD en mongodb.</p>
-                    </div>
-                </div>
+          </div>
+          <div class="card">
+            <img
+              class="card__img"
+              src="https://i.postimg.cc/qRVPbfN1/gif-mobile-first.gif"
+              alt="image project"
+            />
+            <div class="card__container">
+              <h3 class="card__title">MOBILE FIRST</h3>
+              <div class="access">
+                <a
+                  href="https://github.com/MasterJhonny/MobileFirst"
+                  target="_blank"
+                  >code</a
+                >
+                <a
+                  href="https://masterjhonny.github.io/MobileFirst/"
+                  target="_blank"
+                  >view project</a
+                >
+              </div>
+              <p>
+                Es un projecto de maquetacion aplicando la estrategia de
+                MobileFirst, se utilizo html y css.
+              </p>
             </div>
-        </section>
-        <serction class="main__contact" id="contact">
-            <h3 class="section__title">Contact</h3>
-            <div class="contact__container">
-                <form id="form" action="https://formsubmit.co/21efb2abc879ce0d713000cb7354df98" method="post">
-                    <label form="name">
-                        <span>Name</span>
-                        <input class="contact__container--input" type="text" name="name" placeholder="Example: Juan..." autocomplete="name" required />
-                    </label>
-                    <label form="email">
-                        <span>Email</span>
-                        <input class="contact__container--input" type="text" name="email" placeholder="Example: user@example.com" autocomplete="email" required />
-                    </label>
-                    <label form="message">
-                        <span>Message</span>
-                        <textarea class="contact__container--input textarea" name="message" placeholder="Hi, i will..." autocomplete="off" rows="10" cols="50" required ></textarea>
-                    </label>
-                    <input type="hidden" name="_next" value="https://masterjhonny.github.io/thanks/">
-                    <div class="sumbit__btn">
-                        <button class="btn" type="sumbit">sumbit</button>
-                    </div>
-                </form>
+          </div>
+          <div class="card">
+            <img
+              class="card__img"
+              src="https://i.postimg.cc/8PYtnrP0/V-deo-sin-t-tulo-Hecho-con-Clipchamp-1.gif"
+              alt="image project"
+            />
+            <div class="card__container">
+              <h3 class="card__title">RESPONSIVE DESIGN</h3>
+              <div class="access">
+                <a href="https://github.com/MasterJhonny/reto1" target="_blank"
+                  >code</a
+                >
+                <a href="https://masterjhonny.github.io/reto1/" target="_blank"
+                  >view project</a
+                >
+              </div>
+              <p>Es una pagina web responsive, se utilizo html y css.</p>
             </div>
-        </serction>
+          </div>
+          <div class="card">
+            <img
+              class="card__img"
+              src="https://i.postimg.cc/cH4NNzw4/apirest.png"
+              alt="image project"
+            />
+            <div class="card__container">
+              <h3 class="card__title">API REST</h3>
+              <div class="access">
+                <a
+                  href="https://github.com/MasterJhonny/cursoExpress"
+                  target="_blank"
+                  >code</a
+                >
+                <a
+                  href="https://api-express-node-68yz.onrender.com/api/v1/products"
+                  target="_blank"
+                  >view project</a
+                >
+              </div>
+              <p>Es una api rest, se uso nodejs express.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card__img"
+              src="https://i.postimg.cc/WbbMr1n9/notes.png"
+              alt="image project"
+            />
+            <div class="card__container">
+              <h3 class="card__title">APP WEB</h3>
+              <div class="access">
+                <a
+                  href="https://github.com/MasterJhonny/app-notes-react"
+                  target="_blank"
+                  >code</a
+                >
+                <a href="https://app-notes-react.vercel.app/" target="_blank"
+                  >view project</a
+                >
+              </div>
+              <p>
+                Aplicación wed para notas, hecha con react con persintecia de
+                datos y CRUD en mongodb.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <serction class="main__contact" id="contact">
+        <h3 class="section__title">Contact</h3>
+        <div class="contact__container">
+          <form
+            id="form"
+            action="https://formsubmit.co/21efb2abc879ce0d713000cb7354df98"
+            method="post"
+          >
+            <label form="name">
+              <span>Name</span>
+              <input
+                class="contact__container--input"
+                type="text"
+                name="name"
+                placeholder="Example: Juan..."
+                autocomplete="name"
+                required
+              />
+            </label>
+            <label form="email">
+              <span>Email</span>
+              <input
+                class="contact__container--input"
+                type="text"
+                name="email"
+                placeholder="Example: user@example.com"
+                autocomplete="email"
+                required
+              />
+            </label>
+            <label form="message">
+              <span>Message</span>
+              <textarea
+                class="contact__container--input textarea"
+                name="message"
+                placeholder="Hi, i will..."
+                autocomplete="off"
+                rows="10"
+                cols="50"
+                required
+              ></textarea>
+            </label>
+            <input
+              type="hidden"
+              name="_next"
+              value="https://masterjhonny.github.io/thanks/"
+            />
+            <div class="sumbit__btn">
+              <button class="btn" type="sumbit">sumbit</button>
+            </div>
+          </form>
+        </div>
+      </serction>
     </main>
     <footer class="footer">
-        <ul>
-            <li><a target="_blank" href="https://github.com/MasterJhonny"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="icon red social"></a></li>
-            <li><a target="_blank" href="https://twitter.com/JhonnyCallisa14"><img src="https://www.svgrepo.com/show/157815/twitter.svg" alt="icon red social"></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/jhonny-callisaya-4a482a230/"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="icon red social"></a></li>
-        </ul>
-        <p>© copyright 2022</p>
+      <ul>
+        <li>
+          <a target="_blank" href="https://github.com/MasterJhonny"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+              alt="icon red social"
+          /></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://twitter.com/JhonnyCallisa14"
+            ><img
+              src="https://www.svgrepo.com/show/157815/twitter.svg"
+              alt="icon red social"
+          /></a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/jhonny-callisaya-4a482a230/"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+              alt="icon red social"
+          /></a>
+        </li>
+      </ul>
+      <p>© copyright 2022</p>
     </footer>
-    <script>
-        const form = document.getElementById('form');
-    
-        form.addEventListener('submit', (event) => {
-            alert('Enviando formulario');
-            form.reset();
-        })
-    </script>
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>
